@@ -11,3 +11,16 @@ In this project, a multi-threaded server using a thread pool was implemented to 
 -  Thread-Safe Queue: Implement a thread-safe queue to manage client connection sockets, ensuring safe concurrent access.
 -  Thread Management: Create and manage a pool of worker threads. Each thread will retrieve a client connection socket from the thread-safe queue and handle the entire HTTP request-response cycle.
 -  Server Shutdown: Develop a mechanism for cleanly shutting down the multi-threaded server, ensuring all threads and resources are properly terminated and released.
+
+## How to run:
+```
+# Navigate to the project directory 
+cd /path/to/repo/project
+
+# Build the project (simply type "make")
+make
+
+# Run the project
+./http_server <directory> <port>  ## '<directory>': The directory containing the files to be served by the server.
+                                  ## '<port>': The port number for the server to listen on (e.g., 8000).
+```
